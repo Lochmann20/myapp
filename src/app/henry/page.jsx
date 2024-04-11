@@ -6,9 +6,12 @@ async function getHenry() {
 
 
 export default async function HenryPage() {
+    const data = await getHenry();
+    console.log(data);
+
   return (
     <main>
-    <h1>hej</h1>
+    <h1>{data.name}</h1>
     </main>
   );
 }
